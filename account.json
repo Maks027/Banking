@@ -2,7 +2,8 @@
   "account": [
     {
       "name": "Demo Everyday Account",
-      "balance": "$1,959.90"
+      "currency": "USD",
+      "balance": 1959.9
     }
   ]
 }
