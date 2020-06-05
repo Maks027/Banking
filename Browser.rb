@@ -9,6 +9,10 @@ def balance(br)
       .text_content
 end
 
+def acc_name(br)
+  br.h2(class: "yBcmat9coi").text_content
+end
+
 def new_browser
   browser = Watir::Browser.new
   browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
@@ -16,14 +20,21 @@ def new_browser
   return browser
 end
 
-
 br = new_browser
 
+fileName = "account.json"
+file = File.open(fileName, "w")
 
 
 
-puts balance(browser)
+accHash = [:name => acc_name(br) ,
+           :balance => balance(br)]
 
 
+h = {:account => accHash}
 
-browser.close
+
+file.puts JSON.pretty_generate(h)
+
+
+br.close
