@@ -2,12 +2,28 @@ require 'rubygems'
 require 'watir'
 require 'webdrivers'
 
-browser = Watir::Browser.new
+def balance(br)
+  br
+      .div(class: %w[_2tzPNu1unf _22kXFRwS9J])
+      .span(data_semantic: 'header-available-balance-amount')
+      .text_content
+end
 
-browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
+def new_browser
+  browser = Watir::Browser.new
+  browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
+  browser.button(name: 'customer_type').click
+  return browser
+end
 
-browser.button(name: 'customer_type').click
 
-puts "#{browser.url}"
+br = new_browser
+
+
+
+
+puts balance(browser)
+
+
 
 browser.close
