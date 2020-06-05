@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'watir'
 require 'webdrivers'
-require 'json'
 
 browser = Watir::Browser.new
 
