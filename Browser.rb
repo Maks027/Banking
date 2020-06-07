@@ -3,6 +3,8 @@ require 'watir'
 require 'webdrivers'
 require 'monetize'
 require 'money'
+# require 'nokogiri'
+# require 'open-uri'
 
 def balance(br)
   br
@@ -24,6 +26,14 @@ end
 
 br = new_browser
 
+br.wait(10)
+
+# br.link(href: 'https://demo.bendigobank.com.au/banking/accounts/284362d8a0fb8e2d7e978cc5d6e07719').click
+# br.links.each{|link| puts link.href }
+
+links = br.links(data_semantic:'account-panel-link')
+links.each { |link| puts link.href }
+
 fileName = 'account.json'
 file = File.open(fileName, 'w')
 
@@ -31,12 +41,12 @@ Monetize.assume_from_symbol = true
 acc_money = balance(br).to_money
 
 
-accHash = [:name => acc_name(br),
-           :currency => acc_money.currency.to_s,
-           :balance => acc_money.to_f]
+acc_hash = [name: acc_name(br),
+            currency: acc_money.currency.to_s,
+            balance: acc_money.to_f]
 
 
-h = {:account => accHash}
+h = {account: acc_hash}
 
 
 file.puts JSON.pretty_generate(h)
