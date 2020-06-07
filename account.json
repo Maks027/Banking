@@ -4,6 +4,26 @@
       "name": "Demo Everyday Account",
       "currency": "USD",
       "balance": 1959.9
+    },
+    {
+      "name": "Demo My Mastercard",
+      "currency": "USD",
+      "balance": 4588.04
+    },
+    {
+      "name": "Demo Home Loan",
+      "currency": "USD",
+      "balance": 35678.2
+    },
+    {
+      "name": "Demo Term Deposit",
+      "currency": "USD",
+      "balance": 0.0
+    },
+    {
+      "name": "Demo Term Deposit",
+      "currency": "USD",
+      "balance": 0.0
     }
   ]
 }
