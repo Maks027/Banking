@@ -11,11 +11,11 @@ class Account
   end
 
   def to_hash
-    acc_info = { name: @name,
-                 currency: @currency,
-                 balance: @balance,
-                 nature: @nature,
-                 transactions: @transactions }
+    acc_info = {name: @name,
+                acc_currency: @currency,
+                balance: @balance,
+                nature: @nature,
+                transactions: @transactions }
     acc_info
   end
 

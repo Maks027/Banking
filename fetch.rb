@@ -12,11 +12,11 @@ accounts = []
 
 acc_lis.each do |link|
   link.click
-  account = Account.new(browser.name,
-                        browser.currency,
+  account = Account.new(browser.acc_name,
+                        browser.acc_currency,
                         browser.balance,
                         'Credit Card',
-                        'Transactions')
+                        browser.trans_hash)
   accounts << account.to_hash
 end
 

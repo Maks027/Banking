@@ -2,38 +2,263 @@
   "account": [
     {
       "name": "Demo Everyday Account",
-      "currency": "USD",
+      "acc_currency": "USD",
       "balance": 1959.9,
       "nature": "Credit Card",
-      "transactions": "Transactions"
+      "transactions": [
+        {
+          "date": "June 6, 2020",
+          "description": "00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "June 4, 2020",
+          "description": "Oporto St Leonards,St Leonards / 1442",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Oporto"
+        },
+        {
+          "date": "June 4, 2020",
+          "description": "Credit card / 00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "June 4, 2020",
+          "description": "Credit card / 00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "June 2, 2020",
+          "description": "Pocket money Tim",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Timothy Jones"
+        },
+        {
+          "date": "June 1, 2020",
+          "description": "BBL - Yungaburra Yungabu / 2450",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Withdrawal - ATM"
+        },
+        {
+          "date": "May 31, 2020",
+          "description": "Jcu Hrmis Produc 0440675735 / Pay Cheque 4286",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Salary"
+        },
+        {
+          "date": "May 30, 2020",
+          "description": "Oporto St Leonards,St Leonards / 5770",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Oporto"
+        },
+        {
+          "date": "May 28, 2020",
+          "description": "Aldi Stores - Fo,Fortitude Val / 1321",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "ALDI"
+        },
+        {
+          "date": "May 28, 2020",
+          "description": "00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "May 26, 2020",
+          "description": "Jb Hi Fi Warringah, Brookvale / 4695",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "JB Hi-Fi"
+        },
+        {
+          "date": "May 26, 2020",
+          "description": "Cashcard\\Newsxpress Beers Port / 6257",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Withdrawal - Non BBL ATM"
+        },
+        {
+          "date": "May 26, 2020",
+          "description": "Pocket money Tim",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Timothy Jones"
+        },
+        {
+          "date": "May 24, 2020",
+          "description": "Dick Smith Dy9xmq9g, Melbourne / 5200",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Dick Smith"
+        },
+        {
+          "date": "May 19, 2020",
+          "description": "00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "May 19, 2020",
+          "description": "Pocket money Tim",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Timothy Jones"
+        },
+        {
+          "date": "May 17, 2020",
+          "description": "Pay",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "(EnergyAustralia)"
+        },
+        {
+          "date": "May 17, 2020",
+          "description": "Integrated Group 0439852429 / Pay Cheque 6725",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Salary"
+        },
+        {
+          "date": "May 16, 2020",
+          "description": "Oporto South Mel,South Melbour / 1392",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Oporto"
+        },
+        {
+          "date": "May 15, 2020",
+          "description": "Bakers Delight St1,St Leonards / 1829",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Bakers Delight"
+        },
+        {
+          "date": "May 13, 2020",
+          "description": "Pay for cable",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "(FOXTEL)"
+        },
+        {
+          "date": "May 12, 2020",
+          "description": "Pocket money Tim",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Timothy Jones"
+        },
+        {
+          "date": "May 11, 2020",
+          "description": "Kmart 1045, Kangaroo Flat / 9358",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Kmart"
+        },
+        {
+          "date": "May 11, 2020",
+          "description": "Pay",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "(Telstra Mobile)"
+        },
+        {
+          "date": "May 10, 2020",
+          "description": "00001826097602",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "May 7, 2020",
+          "description": "BBL- Cairns Sheridan St Cairns / 3144",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Withdrawal - ATM"
+        },
+        {
+          "date": "May 7, 2020",
+          "description": "Newcastle Airport 2 William / 2543",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Withdrawal - Non BBL ATM"
+        },
+        {
+          "date": "May 6, 2020",
+          "description": "BBL- Bendigo Cntrl Lobb Bendig / 9941",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Withdrawal - ATM"
+        },
+        {
+          "date": "May 5, 2020",
+          "description": "Pocket money Tim",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Timothy Jones"
+        },
+        {
+          "date": "May 4, 2020",
+          "description": "Optus Prepaid Melbou,Melbourne / 7362",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "Optus"
+        }
+      ]
     },
     {
       "name": "Demo My Mastercard",
-      "currency": "USD",
+      "acc_currency": "USD",
       "balance": 4588.04,
       "nature": "Credit Card",
-      "transactions": "Transactions"
+      "transactions": [
+
+      ]
     },
     {
       "name": "Demo Home Loan",
-      "currency": "USD",
+      "acc_currency": "USD",
       "balance": 35678.2,
       "nature": "Credit Card",
-      "transactions": "Transactions"
+      "transactions": [
+
+      ]
     },
     {
       "name": "Demo Term Deposit",
-      "currency": "USD",
+      "acc_currency": "USD",
       "balance": 0.0,
       "nature": "Credit Card",
-      "transactions": "Transactions"
+      "transactions": [
+
+      ]
     },
     {
       "name": "Demo Term Deposit",
-      "currency": "USD",
+      "acc_currency": "USD",
       "balance": 0.0,
       "nature": "Credit Card",
-      "transactions": "Transactions"
+      "transactions": [
+        {
+          "date": "June 8, 2019",
+          "description": "Initial Deposit / 621180601881104777",
+          "amount": "100",
+          "acc_currency": "USD",
+          "account_name": "E-Banking Telegraphic Transfer"
+        }
+      ]
     }
   ]
 }

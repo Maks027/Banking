@@ -14,7 +14,7 @@ class Transaction
     trans_info = {date: @date,
                   description: @description,
                   amount: @amount,
-                  currency: @currency,
+                  acc_currency: @currency,
                   account_name: @account_name}
     trans_info
   end
