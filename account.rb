@@ -13,7 +13,8 @@ class Account
   def to_hash
     acc_info = { name: @name,
                  currency: @currency,
-                 balance: @nature,
+                 balance: @balance,
+                 nature: @nature,
                  transactions: @transactions }
     acc_info
   end

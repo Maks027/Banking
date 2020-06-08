@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#Transaction class
+# Transaction class
 class Transaction
   def initialize(date, description, amount, currency, account_name)
     @date = date

@@ -3,27 +3,37 @@
     {
       "name": "Demo Everyday Account",
       "currency": "USD",
-      "balance": 1959.9
+      "balance": 1959.9,
+      "nature": "Credit Card",
+      "transactions": "Transactions"
     },
     {
       "name": "Demo My Mastercard",
       "currency": "USD",
-      "balance": 4588.04
+      "balance": 4588.04,
+      "nature": "Credit Card",
+      "transactions": "Transactions"
     },
     {
       "name": "Demo Home Loan",
       "currency": "USD",
-      "balance": 35678.2
+      "balance": 35678.2,
+      "nature": "Credit Card",
+      "transactions": "Transactions"
     },
     {
       "name": "Demo Term Deposit",
       "currency": "USD",
-      "balance": 0.0
+      "balance": 0.0,
+      "nature": "Credit Card",
+      "transactions": "Transactions"
     },
     {
       "name": "Demo Term Deposit",
       "currency": "USD",
-      "balance": 0.0
+      "balance": 0.0,
+      "nature": "Credit Card",
+      "transactions": "Transactions"
     }
   ]
 }
