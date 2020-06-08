@@ -55,44 +55,44 @@ class Browser
     transaction.h3(data_semantic: 'activity-group-heading').text_content
   end
 
+  def trans_div(tr_lis)
+    tr_lis.article.header.a.div(class: 'panel__header__label--inline')
+  end
 
   def trans_name(tr_lis)
-    tr_lis.article
-          .header
-          .a
-          .div(class: 'panel__header__label--inline')
-          .h2
-          .span(class: 'overflow-ellipsis')
-          .text_content
+    trans_div(tr_lis).h2.span(class: 'overflow-ellipsis').text_content
   end
 
   def trans_description(tr_lis)
-    tr_lis.article
-          .header
-          .a
-          .div(class: 'panel__header__label--inline')
-          .h2
-          .span(class: %w[overflow-ellipsis sub-title])
-          .text_content
+    trans_div(tr_lis).h2.span(class: %w[overflow-ellipsis sub-title]).text_content
+  end
+
+  def trans_amount(tr_lis)
+    trans_div(tr_lis).div.span(data_semantic: 'transaction-amount').text_content.to_money.to_f
+  end
+
+  def trans_currency(tr_lis)
+    trans_amount(tr_lis).to_money.currency.to_s
   end
 
   def trans_for_date(trans_at_date)
-    trans_at_date_hash = []
+    trans_arr = []
     trans_at_date.ol.lis.each do |t|
-      single_trans = Transaction.new(trans_date(trans_at_date),
+      trans_arr << Transaction.new(trans_date(trans_at_date),
                                      trans_description(t),
-                                     '100',
-                                     'USD',
+                                     trans_amount(t),
+                                     trans_currency(t),
                                      trans_name(t))
-      trans_at_date_hash << single_trans.to_hash
+      # trans_at_date_hash << single_trans.to_hash
     end
-    trans_at_date_hash
+    trans_arr
+    # trans_at_date_hash
   end
 
   def trans_hash
     transactions_hash = []
     transactions.each do |t|
-      trans_for_date(t).each { |t_d| transactions_hash << t_d}
+      trans_for_date(t).each { |t_d| transactions_hash << t_d.to_hash}
     end
     transactions_hash
   end
