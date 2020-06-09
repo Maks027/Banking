@@ -77,26 +77,27 @@ class Browser
   end
 
   def trans_for_date(trans_at_date, tr_date, account_name)
-    tr_hash = []
+    tr_obj_arr = []
     trans_at_date.ol.lis.each do |t_d|
       div = trans_div(t_d)
       tr_money = trans_amount_money(div)
-      tr_hash << Transaction.new(tr_date,
-                                 trans_description(div),
-                                 trans_amount(tr_money),
-                                 trans_currency(tr_money),
-                                 account_name).to_hash
+      tr_obj_arr << Transaction.new(tr_date.to_s,
+                                    trans_description(div),
+                                    trans_amount(tr_money),
+                                    trans_currency(tr_money),
+                                    account_name)
     end
-    tr_hash
+    tr_obj_arr
   end
 
-  def trans_hash
-    trans_hash = []
+  def transactions_obj
+    tr_obj_arr = []
     account_name = acc_name
     transactions.each do |t|
-      date = trans_date(t)
-      trans_hash << trans_for_date(t, date, account_name)
+      date = Date.parse(trans_date(t))
+      return tr_obj_arr.flatten! unless date.between?(Date.today << 2, Date.today)
+      tr_obj_arr << trans_for_date(t, date, account_name)
     end
-    trans_hash.flatten!
+    tr_obj_arr.flatten!
   end
 end

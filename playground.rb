@@ -4,25 +4,33 @@ require './account'
 require './transaction'
 require './browser'
 
-browser = Browser.new
+date = Date.parse('April 8, 2020')
 
-list = browser.get_browser.lis(data_semantic: 'activity-group')
+puts date.between?(Date.today << 2, Date.today)
 
-list_by_date = list[1].ol.lis
-
-a = list_by_date[1]
-        .article
-        .header
-        .a
-        .div(class: 'panel__header__label--inline')
-        .h2
-        .spans
+puts date.to_s
 
 
-        # .text_content
 
-
-puts a[0].text_content, a[1].text_content
+# browser = Browser.new
+#
+# list = browser.get_browser.lis(data_semantic: 'activity-group')
+#
+# list_by_date = list[1].ol.lis
+#
+# a = list_by_date[1]
+#         .article
+#         .header
+#         .a
+#         .div(class: 'panel__header__label--inline')
+#         .h2
+#         .spans
+#
+#
+#         # .text_content
+#
+#
+# puts a[0].text_content, a[1].text_content
 
 # article.header.a.div(class: 'panel__header__label--inline')
 # t1 = Transaction.new(Time.now, 'desc1', 15, 'USD', 'name1')
