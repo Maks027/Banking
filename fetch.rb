@@ -12,10 +12,10 @@ accounts = []
 
 acc_lis.each do |link|
   link.click
-  browser.load_page
+
   activity_div = browser.get_browser.div(class: 'activity-container')
   activity_div.wait_until(&:exists?)
-
+  browser.load_page
   scroll = Watir::Scroll.new(activity_div)
   end_div = browser.get_browser.div(data_semantic: 'end-of-feed-message')
   scroll.to :bottom until end_div.present?

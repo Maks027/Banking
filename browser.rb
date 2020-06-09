@@ -56,24 +56,31 @@ class Browser
   end
 
   def transactions
-    @browser.lis(data_semantic: 'activity-group')
+    # @browser.lis(data_semantic: 'activity-group')
+    @page.css("li[data-semantic='activity-group']")
   end
 
   def trans_date(trans_at_date)
-    trans_at_date.h3(data_semantic: 'activity-group-heading').text_content
+    # trans_at_date.h3(data_semantic: 'activity-group-heading').text_content
+    trans_at_date.css("h3[data-semantic='activity-group-heading']").text
   end
 
   def trans_div(trans_at_date)
-    trans_at_date.article.header.a.div(class: 'panel__header__label--inline')
+    # trans_at_date.article.header.a.div(class: 'panel__header__label--inline')
+    trans_at_date.css("article header a div[class='panel__header__label--inline']")
   end
 
   def trans_description(tr_div)
-    spans = tr_div.h2.spans
-    "Title: #{spans[0].text_content}. Description: #{spans[1].text_content}"
+    # spans = tr_div.h2.spans
+    # "Title: #{spans[0].text_content}. Description: #{spans[1].text_content}"
+    title = tr_div.css("span[class='overflow-ellipsis']").text
+    sec_title = tr_div.css("span[class='overflow-ellipsis sub-title']").text
+    "Title: #{title}. Description: #{sec_title}"
   end
 
   def trans_amount_money(tr_div)
-    tr_div.div.span(data_semantic: 'transaction-amount').text_content.to_money
+    # tr_div.div.span(data_semantic: 'transaction-amount').text_content.to_money
+    tr_div.css("span[data-semantic='transaction-amount']").text.to_money
   end
 
   def trans_amount(tr_money)
@@ -86,7 +93,9 @@ class Browser
 
   def trans_for_date(trans_at_date, tr_date, account_name)
     tr_obj_arr = []
-    trans_at_date.ol.lis.each do |t_d|
+
+    # trans_at_date.ol.lis.each do |t_d|
+    trans_at_date.css('ol li').each do |t_d|
       div = trans_div(t_d)
       tr_money = trans_amount_money(div)
       tr_obj_arr << Transaction.new(tr_date.to_s,
@@ -105,7 +114,7 @@ class Browser
       date = Date.parse(trans_date(t))
       return tr_obj_arr.flatten! unless date.between?(Date.today << 2, Date.today)
 
-      # tr_obj_arr << trans_for_date(t, date, account_name)
+      tr_obj_arr << trans_for_date(t, date, account_name)
     end
     tr_obj_arr.flatten!
   end
