@@ -4,11 +4,22 @@ require './account'
 require './transaction'
 require './browser'
 
-date = Date.parse('April 8, 2020')
 
-puts date.between?(Date.today << 2, Date.today)
+date = Date.parse('June 7, 2020').to_s
+Monetize.assume_from_symbol = true
+amount_str = '$10'
+amount = amount_str.to_money.to_f
+currency = amount_str.to_money.currency.to_s
+tr = Transaction.new(date, 'Description', amount, currency, 'Name')
+tr_hash = tr.to_hash
 
-puts date.to_s
+puts tr_hash
+
+# date = Date.parse('April 8, 2020')
+#
+# puts date.between?(Date.today << 2, Date.today)
+#
+# puts date.to_s
 
 
 
