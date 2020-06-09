@@ -28,12 +28,6 @@ class Browser
   end
 
   def balance_str
-    # bal = @browser
-    #       .li(data_semantic:'header-available-balance')
-    #       .div(data_semantic: 'value')
-    #       .span(data_semantic: 'header-available-balance-amount')
-    #       .text_content
-    # bal
     @page.css("span[data-semantic = 'header-available-balance-amount']").text
   end
 
@@ -46,41 +40,33 @@ class Browser
   end
 
   def acc_name
-    # @browser.h2(data_semantic: 'account-name').text_content
     @page.css("h2[data-semantic = 'account-name']").text
   end
 
   def accounts
     @browser.lis(data_semantic: 'account-item')
-    # @page.css("li[data-semantic = 'account-item']")
   end
 
   def transactions
-    # @browser.lis(data_semantic: 'activity-group')
     @page.css("li[data-semantic='activity-group']")
   end
 
   def trans_date(trans_at_date)
-    # trans_at_date.h3(data_semantic: 'activity-group-heading').text_content
     date_str = trans_at_date.css("h3[data-semantic='activity-group-heading']").text
     Date.parse(date_str)
   end
 
   def trans_div(trans_at_date)
-    # trans_at_date.article.header.a.div(class: 'panel__header__label--inline')
     trans_at_date.css("article header a div[class='panel__header__label--inline']")
   end
 
   def trans_description(tr_div)
-    # spans = tr_div.h2.spans
-    # "Title: #{spans[0].text_content}. Description: #{spans[1].text_content}"
     title = tr_div.css("span[class='overflow-ellipsis']").text
     sec_title = tr_div.css("span[class='overflow-ellipsis sub-title']").text
     "Title: #{title}. Description: #{sec_title}"
   end
 
   def trans_amount_money(tr_div)
-    # tr_div.div.span(data_semantic: 'transaction-amount').text_content.to_money
     tr_div.css("span[data-semantic='transaction-amount']").text.to_money
   end
 
@@ -95,7 +81,6 @@ class Browser
   def trans_for_date(trans_at_date, tr_date, account_name)
     tr_obj_arr = []
 
-    # trans_at_date.ol.lis.each do |t_d|
     trans_at_date.css('ol li').each do |t_d|
       div = trans_div(t_d)
       tr_money = trans_amount_money(div)
