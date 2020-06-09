@@ -21,7 +21,7 @@ acc_lis.each do |link|
 
   end_div = browser.get_browser.div(data_semantic: 'end-of-feed-message')
 
-  until end_div.present? do
+  until end_div.present?
     scroll.to :bottom
   end
   
@@ -36,7 +36,7 @@ end
 file_name = 'account.json'
 file = File.open(file_name, 'w')
 
-acc_hash = {account: accounts}
+acc_hash = { account: accounts }
 
 file.puts JSON.pretty_generate(acc_hash)
 

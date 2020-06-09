@@ -51,50 +51,52 @@ class Browser
     @browser.lis(data_semantic: 'activity-group')
   end
 
-  def trans_date(transaction)
-    transaction.h3(data_semantic: 'activity-group-heading').text_content
+  def trans_date(trans_at_date)
+    trans_at_date.h3(data_semantic: 'activity-group-heading').text_content
   end
 
-  def trans_div(tr_lis)
-    tr_lis.article.header.a.div(class: 'panel__header__label--inline')
+  def trans_div(trans_at_date)
+    trans_at_date.article.header.a.div(class: 'panel__header__label--inline')
   end
 
-  def trans_name(tr_lis)
-    trans_div(tr_lis).h2.span(class: 'overflow-ellipsis').text_content
+  def trans_description(tr_div)
+    spans = tr_div.h2.spans
+    "Title: #{spans[0].text_content}. Description: #{spans[1].text_content}"
   end
 
-  def trans_description(tr_lis)
-    trans_div(tr_lis).h2.span(class: %w[overflow-ellipsis sub-title]).text_content
+  def trans_amount_money(tr_div)
+    tr_div.div.span(data_semantic: 'transaction-amount').text_content.to_money
   end
 
-  def trans_amount(tr_lis)
-    trans_div(tr_lis).div.span(data_semantic: 'transaction-amount').text_content.to_money.to_f
+  def trans_amount(tr_money)
+    tr_money.to_f
   end
 
-  def trans_currency(tr_lis)
-    trans_amount(tr_lis).to_money.currency.to_s
+  def trans_currency(tr_money)
+    tr_money.currency.to_s
   end
 
-  def trans_for_date(trans_at_date)
-    trans_arr = []
-    trans_at_date.ol.lis.each do |t|
-      trans_arr << Transaction.new(trans_date(trans_at_date),
-                                     trans_description(t),
-                                     trans_amount(t),
-                                     trans_currency(t),
-                                     trans_name(t))
-      # trans_at_date_hash << single_trans.to_hash
+  def trans_for_date(trans_at_date, tr_date, account_name)
+    tr_hash = []
+    trans_at_date.ol.lis.each do |t_d|
+      div = trans_div(t_d)
+      tr_money = trans_amount_money(div)
+      tr_hash << Transaction.new(tr_date,
+                                 trans_description(div),
+                                 trans_amount(tr_money),
+                                 trans_currency(tr_money),
+                                 account_name).to_hash
     end
-    trans_arr
-    # trans_at_date_hash
+    tr_hash
   end
 
   def trans_hash
-    transactions_hash = []
+    trans_hash = []
+    account_name = acc_name
     transactions.each do |t|
-      trans_for_date(t).each { |t_d| transactions_hash << t_d.to_hash}
+      date = trans_date(t)
+      trans_hash << trans_for_date(t, date, account_name)
     end
-    transactions_hash
+    trans_hash.flatten!
   end
-
 end
