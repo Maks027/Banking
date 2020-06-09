@@ -18,7 +18,15 @@ acc_lis.each do |link|
   browser.load_page
   scroll = Watir::Scroll.new(activity_div)
   end_div = browser.get_browser.div(data_semantic: 'end-of-feed-message')
-  scroll.to :bottom until end_div.present?
+
+  begin
+    browser.load_page
+    last_trans_date = browser.trans_date(browser.transactions[-1])
+    scroll.to :bottom
+
+    puts last_trans_date.to_s
+  end until end_div.present? || !last_trans_date.between?(Date.today << 2, Date.today)
+
   transactions = browser.transactions_obj
 
   accounts << Account.new(browser.acc_name,

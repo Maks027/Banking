@@ -62,7 +62,8 @@ class Browser
 
   def trans_date(trans_at_date)
     # trans_at_date.h3(data_semantic: 'activity-group-heading').text_content
-    trans_at_date.css("h3[data-semantic='activity-group-heading']").text
+    date_str = trans_at_date.css("h3[data-semantic='activity-group-heading']").text
+    Date.parse(date_str)
   end
 
   def trans_div(trans_at_date)
@@ -111,7 +112,7 @@ class Browser
     tr_obj_arr = []
     account_name = acc_name
     transactions.each do |t|
-      date = Date.parse(trans_date(t))
+      date = trans_date(t)
       return tr_obj_arr.flatten! unless date.between?(Date.today << 2, Date.today)
 
       tr_obj_arr << trans_for_date(t, date, account_name)

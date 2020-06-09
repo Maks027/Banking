@@ -11,11 +11,11 @@ class Transaction
   end
 
   def to_hash
-    trans_info = {date: @date,
-                  description: @description,
-                  amount: @amount,
-                  acc_currency: @currency,
-                  account_name: @account_name}
+    trans_info = { date: @date,
+                   description: @description,
+                   amount: @amount,
+                   acc_currency: @currency,
+                   account_name: @account_name }
     trans_info
   end
 
