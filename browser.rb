@@ -3,6 +3,7 @@
 require 'rubygems'
 require 'watir'
 require 'webdrivers'
+require 'nokogiri'
 require 'monetize'
 require 'money'
 require './transaction'
@@ -13,7 +14,7 @@ class Browser
     @browser = Watir::Browser.new
     @browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
     @browser.button(name: 'customer_type').click
-
+    load_page
     Monetize.assume_from_symbol = true
 
   end
@@ -22,13 +23,18 @@ class Browser
     @browser
   end
 
+  def load_page
+    @page = Nokogiri::HTML(@browser.html)
+  end
+
   def balance_str
-    bal = @browser
-          .li(data_semantic:'header-available-balance')
-          .div(data_semantic: 'value')
-          .span(data_semantic: 'header-available-balance-amount')
-          .text_content
-    bal
+    # bal = @browser
+    #       .li(data_semantic:'header-available-balance')
+    #       .div(data_semantic: 'value')
+    #       .span(data_semantic: 'header-available-balance-amount')
+    #       .text_content
+    # bal
+    @page.css("span[data-semantic = 'header-available-balance-amount']").text
   end
 
   def balance
@@ -40,11 +46,13 @@ class Browser
   end
 
   def acc_name
-    @browser.h2(data_semantic: 'account-name').text_content
+    # @browser.h2(data_semantic: 'account-name').text_content
+    @page.css("h2[data-semantic = 'account-name']").text
   end
 
   def accounts
     @browser.lis(data_semantic: 'account-item')
+    # @page.css("li[data-semantic = 'account-item']")
   end
 
   def transactions
@@ -96,7 +104,8 @@ class Browser
     transactions.each do |t|
       date = Date.parse(trans_date(t))
       return tr_obj_arr.flatten! unless date.between?(Date.today << 2, Date.today)
-      tr_obj_arr << trans_for_date(t, date, account_name)
+
+      # tr_obj_arr << trans_for_date(t, date, account_name)
     end
     tr_obj_arr.flatten!
   end

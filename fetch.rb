@@ -12,6 +12,7 @@ accounts = []
 
 acc_lis.each do |link|
   link.click
+  browser.load_page
   activity_div = browser.get_browser.div(class: 'activity-container')
   activity_div.wait_until(&:exists?)
 
