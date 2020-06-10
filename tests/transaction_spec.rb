@@ -15,8 +15,10 @@ describe 'Transaction' do
     tr = Transaction.new(date, 'Description', amount, currency, 'Name')
     tr_hash = tr.to_hash
 
-    expect(tr_hash).to eq({:date => "2020-06-07", :description => "Description", :amount => 10.0, :acc_currency => "USD", :account_name => "Name"})
+    expect(tr_hash).to eq({ date: '2020-06-07',
+                            description: 'Description',
+                            amount: 10.0,
+                            acc_currency: 'USD',
+                            account_name: 'Name' })
   end
-
-
 end

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require './account'
-require './transaction'
-require './browser'
-require './to_json'
+require_relative 'account'
+require_relative 'transaction'
+require_relative 'browser'
+require_relative 'to_json'
 
 browser = Browser.new
 acc_lis = browser.accounts

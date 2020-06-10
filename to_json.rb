@@ -1,7 +1,7 @@
 # frozen_string_literal: true
-require './account'
-require './transaction'
-require './browser'
+require_relative 'account'
+require_relative 'transaction'
+require_relative 'browser'
 
 # Methods for saving fetched data to JSON file
 class ToJSON

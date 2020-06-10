@@ -6,7 +6,7 @@ require 'webdrivers'
 require 'nokogiri'
 require 'monetize'
 require 'money'
-require './transaction'
+require_relative 'transaction'
 
 # Browser class
 class Browser
@@ -80,7 +80,6 @@ class Browser
 
   def trans_for_date(trans_at_date, tr_date, account_name)
     tr_obj_arr = []
-
     trans_at_date.css('ol li').each do |t_d|
       div = trans_div(t_d)
       tr_money = trans_amount_money(div)

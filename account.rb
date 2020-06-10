@@ -1,5 +1,7 @@
 # frozen_string_literal: true
-require './transaction'
+
+require_relative 'transaction'
+
 # Account class
 class Account
   def initialize(name, currency, balance, nature, transactions)
@@ -14,7 +16,7 @@ class Account
     transactions_hash = []
     @transactions&.each { |t| transactions_hash << t.to_hash }
     acc_info = { name: @name,
-                 acc_currency: @currency,
+                 currency: @currency,
                  balance: @balance,
                  nature: @nature,
                  transactions: transactions_hash }
