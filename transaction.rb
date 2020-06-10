@@ -18,5 +18,4 @@ class Transaction
                    account_name: @account_name }
     trans_info
   end
-
 end

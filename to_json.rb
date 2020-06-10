@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require_relative 'account'
 require_relative 'transaction'
-require_relative 'browser'
+require_relative 'bank_page'
 
 # Methods for saving fetched data to JSON file
 class ToJSON
@@ -14,9 +14,9 @@ class ToJSON
     @file.puts JSON.pretty_generate(hash)
   end
 
-  def write_obj_to_json(acc_objects)
+  def write_acc_to_json(acc_array)
     acc_hash = []
-    acc_objects.each { |acc| acc_hash << acc.to_hash }
+    acc_array.each { |acc| acc_hash << acc.to_hash }
     acc_hash_f = { account: acc_hash}
     write_to_file(acc_hash_f)
   end

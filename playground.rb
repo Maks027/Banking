@@ -2,7 +2,7 @@
 
 require './account'
 require './transaction'
-require './browser'
+require './bank_page'
 
 
 date = Date.parse('June 7, 2020').to_s
@@ -23,7 +23,7 @@ puts tr_hash
 
 
 
-# browser = Browser.new
+# browser = BankPage.new
 #
 # list = browser.get_browser.lis(data_semantic: 'activity-group')
 #

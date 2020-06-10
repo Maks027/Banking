@@ -15,12 +15,11 @@ class Account
   def to_hash
     transactions_hash = []
     @transactions&.each { |t| transactions_hash << t.to_hash }
-    acc_info = { name: @name,
-                 currency: @currency,
-                 balance: @balance,
-                 nature: @nature,
-                 transactions: transactions_hash }
-    acc_info
+    { name: @name,
+      currency: @currency,
+      balance: @balance,
+      nature: @nature,
+      transactions: transactions_hash }
   end
 
 end
