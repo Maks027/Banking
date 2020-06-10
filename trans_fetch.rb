@@ -9,9 +9,12 @@ require_relative 'transaction'
 
 # Transaction fetch class
 class TransFetch
+  attr_accessor :page
   def initialize(bank_page)
-    @page = bank_page.load_page
     Monetize.assume_from_symbol = true
+    return if bank_page.nil?
+
+    @page = bank_page.load_page
   end
 
   def acc_name
@@ -36,7 +39,7 @@ class TransFetch
   end
 
   def trans_description(current_trans)
-    title = trans_div(current_trans).css("span[class='overflow-ellipsis']").text #Try getting span array
+    title = trans_div(current_trans).css("span[class='overflow-ellipsis']").text
     sec_title = trans_div(current_trans).css("span[class='overflow-ellipsis sub-title']").text
     "Title: #{title}. Description: #{sec_title}"
   end
@@ -63,10 +66,15 @@ class TransFetch
     tr_obj_arr = []
     trans_list_by_date.each do |t|
       date = trans_date(t)
-      return tr_obj_arr.flatten! unless date.between?(Date.today << 2, Date.today)
+
+      unless date.between?(Date.today << 2, Date.today)
+        puts ">Fetched #{tr_obj_arr.length} transactions"
+        return tr_obj_arr.flatten!
+      end
 
       tr_obj_arr << trans_for_date(t, date, name)
     end
+    puts ">Fetched #{tr_obj_arr.length} transactions"
     tr_obj_arr.flatten!
   end
 end

@@ -8,436 +8,436 @@
       "transactions": [
         {
           "date": "2020-06-08",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-06",
           "description": "Title: Oporto. Description: Oporto St Leonards,St Leonards / 1442",
           "amount": 49.92,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-06",
-          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841377602",
           "amount": 190.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-06",
-          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841377602",
           "amount": 260.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-04",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-03",
           "description": "Title: Withdrawal - ATM. Description: BBL - Yungaburra Yungabu / 2450",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-02",
           "description": "Title: Salary. Description: Jcu Hrmis Produc 0440675735 / Pay Cheque 4286",
           "amount": 4550.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-06-01",
           "description": "Title: Oporto. Description: Oporto St Leonards,St Leonards / 5770",
           "amount": 46.38,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-30",
           "description": "Title: ALDI. Description: Aldi Stores - Fo,Fortitude Val / 1321",
           "amount": 57.34,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-30",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 34.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-28",
           "description": "Title: JB Hi-Fi. Description: Jb Hi Fi Warringah, Brookvale / 4695",
           "amount": 91.65,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-28",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Cashcard\\Newsxpress Beers Port / 6257",
           "amount": 50.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-28",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-26",
           "description": "Title: Dick Smith. Description: Dick Smith Dy9xmq9g, Melbourne / 5200",
           "amount": 85.52,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-21",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 22.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-21",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-19",
           "description": "Title:  (EnergyAustralia). Description: Pay ",
           "amount": 302.33,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-19",
           "description": "Title: Salary. Description: Integrated Group 0439852429 / Pay Cheque 6725",
           "amount": 4550.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-18",
           "description": "Title: Oporto. Description: Oporto South Mel,South Melbour / 1392",
           "amount": 69.58,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-17",
           "description": "Title: Bakers Delight. Description: Bakers Delight St1,St Leonards / 1829",
           "amount": 85.49,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-15",
           "description": "Title:  (FOXTEL). Description: Pay for cable",
           "amount": 69.95,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-14",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-13",
           "description": "Title: Kmart. Description: Kmart 1045, Kangaroo Flat / 9358",
           "amount": 15.95,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-13",
           "description": "Title:  (Telstra Mobile). Description: Pay ",
           "amount": 94.12,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-12",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 40.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-09",
           "description": "Title: Withdrawal - ATM. Description: BBL- Cairns Sheridan St Cairns / 3144",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-09",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Newcastle Airport 2 William / 2543",
           "amount": 200.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-08",
           "description": "Title: Withdrawal - ATM. Description: BBL- Bendigo Cntrl Lobb Bendig / 9941",
           "amount": 150.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-07",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-06",
           "description": "Title: Optus. Description: Optus Prepaid Melbou,Melbourne / 7362",
           "amount": 12.65,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-06",
           "description": "Title: Withdrawal - ATM. Description: BBL- Eaglehawk #2 Eagleha / 6136",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-06",
           "description": "Title: Withdrawal - ATM. Description: BBL- Eaglehawk #2 Eagleha / 1139",
           "amount": 50.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-06",
-          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841377602",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-06",
-          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: Credit card / 00001841377602",
           "amount": 110.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-05",
           "description": "Title:  (Australian Taxation Office). Description: Pay ",
           "amount": 2473.72,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-05",
           "description": "Title: Salary. Description: Forum-C PTY LTD 0440944998 / Pay Cheque 9426",
           "amount": 4550.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-03",
           "description": "Title: Telegraphic Transfer Fee. Description: Foreign TT / 7188769508",
           "amount": 20.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-03",
           "description": "Title: Cody Crooks. Description: Foreign TT",
           "amount": 23.88,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-03",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 15.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-01",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Tower Shopping Ceboq Toowo / 6299",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-05-01",
           "description": "Title:  (Sydney Water). Description: Pay ",
           "amount": 76.09,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-30",
           "description": "Title: ALDI. Description: Aldi Stores - Werribe,Werribee / 1980",
           "amount": 96.74,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-30",
           "description": "Title: Woolworths. Description: Woolworths 3311, Sth Melbourne / 7120",
           "amount": 72.69,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-30",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-28",
           "description": "Title: Qantas. Description: Qantas Airways Limited, Mascot / 9592",
           "amount": 5.49,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-26",
           "description": "Title: IKEA. Description: Ikea Richmond, Richmond / 4454",
           "amount": 85.09,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-25",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Westpachllywd Pla O/S Salis / 9801",
           "amount": 50.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-24",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 24.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-23",
           "description": "Title: Angelina Becker DVM. Description: Domestic TT",
           "amount": 86.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-23",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-22",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Cashcard\\Swift Petroleum Conve / 8320",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-21",
           "description": "Title: Salary. Description: Jcu Hrmis Produc 0438485347 / Pay Cheque 1781",
           "amount": 4550.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-20",
           "description": "Title: ALDI. Description: Aldi Stores - Fo,Fortitude Val / 9404",
           "amount": 42.69,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-20",
           "description": "Title: Withdrawal - Non BBL ATM. Description: Northlakes San Remo San Rem / 9111",
           "amount": 200.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-18",
           "description": "Title: Withdrawal - ATM. Description: BBL- Cairns Sheridan St Cairns / 6523",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-17",
           "description": "Title: Bakers Delight. Description: Tully PTY LTD, Bentleigh / 7754",
           "amount": 96.32,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-17",
           "description": "Title: Woolworths. Description: Woolworths 3311, Sth Melbourne / 2879",
           "amount": 97.02,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-16",
           "description": "Title: Timothy Jones. Description: Pocket money Tim",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-15",
           "description": "Title:  (FOXTEL). Description: Pay for cable",
           "amount": 69.95,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-15",
           "description": "Title:  (Telstra Mobile). Description: Pay ",
           "amount": 80.11,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-15",
-          "description": "Title: Demo My Mastercard. Description: 00001841067602",
+          "description": "Title: Demo My Mastercard. Description: 00001841377602",
           "amount": 24.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         },
         {
           "date": "2020-04-14",
           "description": "Title: McDonald's. Description: Mcdonalds the Strand, Sydney / 5984",
           "amount": 14.56,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Everyday Account"
         }
       ]
@@ -452,224 +452,224 @@
           "date": "2020-06-09",
           "description": "Title: Woolworths. Description: Woolworths 3311, Sth Melbourne / 7638",
           "amount": 135.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-09",
           "description": "Title: IKEA. Description: Ikea Springvale, Springvale / 6071",
           "amount": 113.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-08",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 10.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-06",
-          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184137SA00",
           "amount": 190.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-06",
-          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184137SA00",
           "amount": 260.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-02",
           "description": "Title: Woolworths. Description: Woolworths 3311, Sth Melbourne / 7432",
           "amount": 91.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-06-02",
           "description": "Title: Optus. Description: Optus Prepaid Melbou,Melbourne / 6297",
           "amount": 89.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-30",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 34.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-26",
           "description": "Title: Oporto. Description: Oporto St Leonards,St Leonards / 6373",
           "amount": 124.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-26",
           "description": "Title: Optus. Description: Optus Prepaid Melbou,Melbourne / 7350",
           "amount": 88.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-21",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 22.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-19",
           "description": "Title: Caltex. Description: Caltex Hamilton, Hamilton / 8143",
           "amount": 110.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-19",
           "description": "Title: 7-Eleven. Description: 7-Eleven 1326, St Kilda / 9757",
           "amount": 147.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-12",
           "description": "Title: ALDI. Description: Aldi Stores - Werribe,Werribee / 9229",
           "amount": 82.0,
-          "acc_currency": "USD",
+          "currency": "USD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "2020-05-12",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
+          "amount": 40.0,
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-12",
           "description": "Title: Qantas. Description: Qantas Airways Limit, Mascot / 1362",
           "amount": 136.0,
-          "acc_currency": "USD",
-          "account_name": "Demo My Mastercard"
-        },
-        {
-          "date": "2020-05-12",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
-          "amount": 40.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-06",
-          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184137SA00",
           "amount": 100.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-06",
-          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: Credit card / 0000184137SA00",
           "amount": 110.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-05",
           "description": "Title: Bunnings Warehouse. Description: Bunnings 461000 Qps, Fyshwick / 9014",
           "amount": 98.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-05",
           "description": "Title: JB Hi-Fi. Description: Jbhifi.Com.AU, Chadstone / 7910",
           "amount": 138.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-05-03",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 15.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-28",
           "description": "Title: Angelina Becker DVM. Description: Domestic TT",
           "amount": 28.84,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-28",
           "description": "Title: JB Hi-Fi. Description: Jb Hi Fi Warringah, Brookvale / 9154",
           "amount": 134.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-28",
           "description": "Title: Optus. Description: Optus Billing Se,Macquarie Par / 7911",
           "amount": 81.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-24",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 24.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-21",
           "description": "Title: Qantas. Description: Qantas Airways Limit, Mascot / 2452",
           "amount": 144.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-21",
           "description": "Title: ALDI. Description: Aldi Stores - Fo,Fortitude Val / 4489",
           "amount": 113.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-19",
           "description": "Title: Telegraphic Transfer Fee. Description: Foreign TT / 8849331338",
           "amount": 20.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-19",
           "description": "Title: Cody Crooks. Description: Foreign TT",
           "amount": 48.18,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-15",
-          "description": "Title: Demo Everyday Account. Description: 0000184106SA00",
+          "description": "Title: Demo Everyday Account. Description: 0000184137SA00",
           "amount": 24.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-14",
           "description": "Title: Optus. Description: Optus Billing Se,Macquarie Par / 5461",
           "amount": 79.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         },
         {
           "date": "2020-04-14",
           "description": "Title: Tigerair. Description: Tiger Airways Aust,Bowen Hills / 1085",
           "amount": 81.0,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo My Mastercard"
         }
       ]
@@ -684,35 +684,28 @@
           "date": "2020-06-10",
           "description": "Title: Repayment. Description: Home Loan Payment / 343572494809705593",
           "amount": 1104.69,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Home Loan"
         },
         {
           "date": "2020-06-01",
           "description": "Title: Interest. Description: Interest Charged / 611619614296770510",
           "amount": 964.77,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Home Loan"
         },
         {
           "date": "2020-05-10",
           "description": "Title: Repayment. Description: Home Loan Payment / 699441489441262233",
           "amount": 1104.69,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Home Loan"
         },
         {
           "date": "2020-05-01",
           "description": "Title: Interest. Description: Interest Charged / 270469993899271495",
           "amount": 964.77,
-          "acc_currency": "USD",
-          "account_name": "Demo Home Loan"
-        },
-        {
-          "date": "2020-04-10",
-          "description": "Title: Repayment. Description: Home Loan Payment / 520459607345300458",
-          "amount": 1104.69,
-          "acc_currency": "USD",
+          "currency": "USD",
           "account_name": "Demo Home Loan"
         }
       ]

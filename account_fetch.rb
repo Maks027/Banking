@@ -1,14 +1,18 @@
+# frozen_string_literal: true
 require_relative 'account'
 require_relative 'transaction'
 require_relative 'trans_fetch'
 
 # Account fetch class
 class AccountFetch
+  attr_accessor :page
   def initialize(bank_page)
+    Monetize.assume_from_symbol = true
+    return if bank_page.nil?
+
     @bank_page = bank_page
     @browser = bank_page.browser
     @page = bank_page.load_page
-    Monetize.assume_from_symbol = true
   end
 
   def accounts
@@ -59,12 +63,17 @@ class AccountFetch
     acc_obj_arr = []
     accounts.each do |link|
       link.click
+      puts "Accessing account: #{acc_name}"
       wait_to_load
+      puts 'Loading transactions data'
       scroll_to_bottom
+      puts '>Transactions data successfully loaded'
+      puts 'Fetching transactions'
       tr = TransFetch.new(@bank_page).fetch_trans
 
       acc_obj_arr << Account.new(acc_name, acc_currency, acc_balance,
-                        'Credit Card', tr)
+                                 'Credit Card', tr)
+      puts ">Successfully retrieved data for #{acc_name} account"
     end
     acc_obj_arr
   end
