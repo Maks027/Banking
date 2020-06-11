@@ -1,17 +1,17 @@
-## Banking
+# Banking
 Ruby script for fetching data from Bendigo Bank demo 
 accounts 
 
 Link: https://demo.bendigobank.com.au/banking/sign_in
 
-####Getting started
+## Getting started
 These instructions will get you a copy of this project 
 for running the script on your computer.
-#####Prerequisites
+### Prerequisites
 You should have *Ruby 2.6.6* (or newer version) installed 
 in order to run the script. Tested on only on version *2.6.6 (Windows 10)*. 
 The project was developed using *RubyMine 2020.1.2* IDE.
-#####Installing
+### Installing
 To get a copy of the project, you can create an empty 
 repository in a preferred location and run:
 
@@ -21,7 +21,7 @@ repository in a preferred location and run:
  Alternatively, you can download the project as a .zip archive
  and unpack it to some location on your computer
  
-#####Runnning
+### Runnning
 To run the script, simply open *cmd* (for Windows) 
 or *Bash* terminal (for Linux) and navigate to the 
 project location. Then run the command:
@@ -34,7 +34,7 @@ to console about its status. At the end, the script will
 write all fetched data to an *accounts_printout_{timestamp}.json* file in the */output*
 directory.
 
-#####Used frameworks
+### Used frameworks
 * Watir (http://watir.com/)
 * webdrivers (https://github.com/titusfortner/webdrivers)
 * Nokogiri (https://nokogiri.org/)
