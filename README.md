@@ -1,13 +1,13 @@
-## Banking
+# Banking
 Ruby script for fetching data from Bendigo Bank demo 
 accounts 
 
 Link: https://demo.bendigobank.com.au/banking/sign_in
 
-#Getting started
+##Getting started
 These instructions will get you a copy of this project 
 for running the script on your computer.
-##Prerequisites
+###Prerequisites
 You should have *Ruby 2.6.6* (or newer version) installed 
 in order to run the script. Tested on only on version *2.6.6 (Windows 10)*. 
 The project was developed using *RubyMine 2020.1.2* IDE.
