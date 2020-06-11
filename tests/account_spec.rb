@@ -2,7 +2,6 @@ require 'rubygems'
 require 'rspec'
 require 'monetize'
 require 'money'
-
 require '../account'
 require 'date'
 
@@ -15,7 +14,6 @@ describe 'Account' do
     currency = amount_str.to_money.currency.to_s
     tr = Transaction.new(date, 'Description', amount, currency, 'Name')
     transactions = [] << tr
-
     account = Account.new('Name', 'USD', 100, 'Credit Card', transactions)
     account_hash = account.to_hash
     expect(account_hash).to eq({ name: 'Name',

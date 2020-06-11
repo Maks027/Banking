@@ -11,7 +11,6 @@ describe 'TransFetch' do
     fake_page = Nokogiri::HTML(open('test_html.html'))
     tf = TransFetch.new(nil)
     tf.page = fake_page
-
     trans_list = tf.fetch_trans
     trans_hash_list = []
     trans_list.each { |t| trans_hash_list << t.to_hash }

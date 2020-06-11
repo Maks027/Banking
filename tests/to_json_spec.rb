@@ -35,10 +35,8 @@ describe 'ToJSON' do
     transactions = [] << tr
     acc= Account.new('Name', 'USD', 100, 'Credit Card', transactions)
     accounts = [] << acc
-
     a = ToJSON.new(file_name)
     a.write_acc_to_json(accounts)
-
     b = File.open(file_name, 'r')
     expect(a.file.print).to eq(b.print)
     a.file.close

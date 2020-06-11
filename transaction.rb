@@ -2,6 +2,7 @@
 
 # Transaction class
 class Transaction
+  # Initialises instance variables with data passed as arguments
   def initialize(date, description, amount, currency, account_name)
     @date = date
     @description = description
@@ -10,6 +11,7 @@ class Transaction
     @account_name = account_name
   end
 
+  # Method for converting instance variables to hash
   def to_hash
     trans_info = { date: @date,
                    description: @description,
