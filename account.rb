@@ -5,6 +5,8 @@ require_relative 'transaction'
 # Account class
 class Account
   # Initialises instance variables with data passed as arguments
+  attr_accessor :transactions
+  attr_accessor :name
   def initialize(name, currency, balance, nature, transactions)
     @name = name
     @currency = currency

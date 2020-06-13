@@ -2,6 +2,7 @@
 
 # Transaction class
 class Transaction
+  attr_accessor :account_name
   # Initialises instance variables with data passed as arguments
   def initialize(date, description, amount, currency, account_name)
     @date = date

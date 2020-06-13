@@ -9,21 +9,20 @@ require_relative 'transaction'
 
 # Transaction fetch class
 class TransFetch
-  attr_accessor :page # Provides accessors to the current page(for testing)
-  def initialize(bank_page)
-    return if bank_page.nil?  # Enables possibility to instantiate object with nil argument(for testing)
 
-    @page = bank_page.load_page
+  def initialize
+    Money.rounding_mode = BigDecimal::ROUND_HALF_EVEN
+    Monetize.assume_from_symbol = true
   end
 
   # Returns account name of current transaction as String
-  def acc_name
-    @page.css("h2[data-semantic = 'account-name']").text
+  def acc_name(html_page)
+    html_page.css("h2[data-semantic = 'account-name']").text
   end
 
   # Returns an array of html lists of transactions grouped by date
-  def trans_list_by_date
-    @page.css("li[data-semantic='activity-group']")
+  def trans_list_by_date(html_page)
+    html_page.css("li[data-semantic='activity-group']")
   end
 
   # Returns an array of html lists of transactions at a specific date
@@ -83,10 +82,10 @@ class TransFetch
   # calling #trans_for_date to get all transactions at a specific date
   # and stores returned object in an array.
   # Returns a flatten array of Transaction objects for the last 2 months
-  def fetch_trans
-    name = acc_name
+  def fetch_trans(html_page)
+    name = acc_name(html_page)
     tr_obj_arr = []
-    trans_list_by_date.each do |t|
+    trans_list_by_date(html_page).each do |t|
       date = trans_date(t)
       unless date.between?(Date.today << 2, Date.today)
         puts ">Fetched #{tr_obj_arr.length} transactions"
