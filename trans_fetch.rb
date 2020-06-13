@@ -17,7 +17,7 @@ class TransFetch
 
   # Returns account name of current transaction as String
   def acc_name(html_page)
-    html_page.css("li[data-semantic='account-item'] a div div[data-semantic='account-name'] div").text
+    html_page.css("h2[data-semantic = 'account-name']").text
   end
 
   # Returns an array of html lists of transactions grouped by date

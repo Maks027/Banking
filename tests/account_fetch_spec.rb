@@ -17,7 +17,7 @@ describe 'AccountFetch' do
   end
 
   it 'check number of accounts and show an example account' do
-    page = Nokogiri::HTML(open('accounts_html.html'))
+    page = Nokogiri::HTML(open('page_example.html'))
     acc = AccountFetch.new.fetch_accounts(page)
 
     puts 'First account hash:'
@@ -29,6 +29,6 @@ describe 'AccountFetch' do
                                    currency: 'USD',
                                    name: 'Demo Everyday Account',
                                    nature: 'Credit Card',
-                                   transactions: [] } )
+                                   transactions: [] })
   end
 end

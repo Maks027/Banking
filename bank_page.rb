@@ -24,6 +24,10 @@ class BankPage
     Nokogiri::HTML(browser.html)
   end
 
+  def acc_name(html_page)
+    html_page.css("h2[data-semantic = 'account-name']").text
+  end
+
   def accounts(browser)
     browser.lis(data_semantic: 'account-item')
   end
@@ -72,10 +76,15 @@ class BankPage
   def parse_acc_trans(browser)
     acc_arr = AccountFetch.new.fetch_accounts(load_page(browser))
     accounts(browser).each do |account|
+      puts "Accessing account: #{acc_name(load_page(browser))}"
       account.click
       wait_to_load(browser)
+      puts 'Loading transactions data'
       scroll_to_bottom(browser)
+      puts '>Transactions data successfully loaded'
+      puts 'Fetching transactions'
       acc_arr = attach_trans(acc_arr, load_page(browser))
+      puts ">Successfully retrieved transactions for #{acc_name(load_page(browser))} account"
     end
     acc_arr
   end
