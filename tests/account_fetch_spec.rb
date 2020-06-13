@@ -18,11 +18,17 @@ describe 'AccountFetch' do
 
   it 'check number of accounts and show an example account' do
     page = Nokogiri::HTML(open('accounts_html.html'))
-    af = AccountFetch.new(nil )
-    af.page = page
-    acc = af.fetch_accounts(page)
-    puts acc[0].to_hash
+    acc = AccountFetch.new.fetch_accounts(page)
+
+    puts 'First account hash:'
+    puts JSON.pretty_generate(acc[0].to_hash)
+    puts "A total of #{acc.length} accounts detected"
+
+    expect(acc.length).to eq(5)
+    expect(acc[0].to_hash).to eq({ balance: 1959.9,
+                                   currency: 'USD',
+                                   name: 'Demo Everyday Account',
+                                   nature: 'Credit Card',
+                                   transactions: [] } )
   end
-
 end
-
