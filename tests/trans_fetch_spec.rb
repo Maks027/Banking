@@ -9,9 +9,9 @@ describe 'TransFetch' do
   it 'Verifies #fetch_trans method on test html file' do
 
     fake_page = Nokogiri::HTML(open('test_html.html'))
-    tf = TransFetch.new(nil)
-    tf.page = fake_page
-    trans_list = tf.fetch_trans
+    tf = TransFetch.new
+
+    trans_list = tf.fetch_trans(fake_page)
     trans_hash_list = []
     trans_list.each { |t| trans_hash_list << t.to_hash }
 
@@ -35,7 +35,6 @@ describe 'TransFetch' do
                      amount: 4.0,
                      currency: 'USD',
                      account_name: 'Test Account Name' }
-
     expect(trans_hash_list).to eq(expected_out)
   end
 end

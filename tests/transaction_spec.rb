@@ -17,7 +17,7 @@ describe 'Transaction' do
     expect(tr_hash).to eq({ date: '2020-06-07',
                             description: 'Description',
                             amount: 10.0,
-                            acc_currency: 'USD',
+                            currency: 'USD',
                             account_name: 'Name' })
   end
 end
